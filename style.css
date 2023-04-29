@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e7e7
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px #0000001a, -15px -15px 20px #fffb;
+}
+
+.keys {
+    display: grid;
+}
+
+#value {
+    grid-column: span 4;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 70px;
+    line-height: 70px;
+    box-shadow: inset 5px 5px 10px #0000001a,
+        inset -5px -5px 26px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 18px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.container .keys span {
+    padding: 10px;
+    box-shadow: inset 5px 5px 10px #0000001a,
+        inset -5px -5px 20px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #474646;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px #0000001a,
+        -5px -5px 10px #fff;
+    border-radius: 10px;
+}
+
+.container .keys span:active {
+    box-shadow: inset 5px 5px 10px #0000001a,
+        inset -5px -5px 10px #fff;
+    color: #a10c40;
+}
+
+.container .keys span#clear {
+    grid-column: span 2;
+    background: lightcoral;
+    color: #fff;
+    border: 2px solid #edf1f4;
+    
+}
+
+.container .keys span#plus {
+    grid-row: span 2;
+    background: #b4beb4;
+    color: #474646;
+    border: 2px solid #edf1f4;
+}
+
+.container .keys span#equal {
+    grid-row: span 2;
+    background: #9daab6;
+    color: #474646;
+    border: 2px solid #edf1f4;
+}
+.container .keys span#equal:active {
+    box-shadow: inset 5px 5px 10px #0000001a,
+        inset -5px -5px 10px #b4beb4;
+}
+
+.container .keys span#clear:active{
+    box-shadow: inset 5px 5px 10px #0000001a,
+        inset -5px -5px 10px lightcoral;
+}
+
+
+.container .keys span#plus:active{
+    box-shadow: inset 5px 5px 10px #0000001a,
+        inset -5px -5px 10px #b4beb4;
+}
