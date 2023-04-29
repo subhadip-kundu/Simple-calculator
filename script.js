@@ -18,7 +18,13 @@ for (let index = 0; index < btn.length; index++) {
         if (clickedButton.innerHTML === "=") {
             // if the "=" button is clicked, calculate the result and display it in the value element
             const result = calculate(value.innerHTML);
-            value.innerHTML = parseFloat(result.toFixed(6)); // limit result to 5 decimal places
+            if (result.toString().length > 14) {
+                // if the result has more than 15 digits, convert it to exponential notation
+                value.innerHTML = parseFloat(result).toExponential(10);
+            } else {
+                // otherwise, round the result to 5 decimal places and display it as a regular number
+                value.innerHTML = parseFloat(result.toFixed(5));
+            }
         } else if (clickedButton.innerHTML === "Clear") {
             // if the "Clear" button is clicked, clear the input and set the flag
             value.innerHTML = "0";
