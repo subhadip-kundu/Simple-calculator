@@ -2,7 +2,7 @@ let buttons = document.querySelector('.keys');
 let btn = document.querySelectorAll('span');
 let value = document.getElementById('value');
 
-let hasCleared = false; // flag to indicate if the user has cleared the input
+let hasCleared = true; // flag to indicate if the user has cleared the input
 
 for (let index = 0; index < btn.length; index++) {
     btn[index].addEventListener("click", (event) => {
