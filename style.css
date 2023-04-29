@@ -20,6 +20,7 @@ body {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 15px 15px 20px #0000001a, -15px -15px 20px #fffb;
+    border: 2px solid lightcoral;
 }
 
 .keys {
@@ -40,6 +41,7 @@ body {
     padding: 0 18px;
     font-size: 2em;
     font-weight: 500;
+    border: 2px solid #b4beb4;
 }
 
 .container .keys span {
