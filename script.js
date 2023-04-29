@@ -8,7 +8,7 @@ let btn = document.querySelectorAll('span');
 let value = document.getElementById('value');
 
 // initialize a flag to keep track of whether the input has been cleared or not
-let hasCleared = false;
+let hasCleared = true;
 
 // loop through all the buttons and add a click event listener to each one
 for (let index = 0; index < btn.length; index++) {
